@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 01  create a program that takes subject numbers from the user and shows a marksheet
+      /*let maths = parseFloat(prompt("Enter maths marks"));
+      let physics = parseFloat(prompt("Enter physics marks"));
+      let chemistry = parseFloat(prompt("Enter chemistry marks"));
+      let english = parseFloat(prompt("Enter english marks"));
+      let bio = parseFloat(prompt("Enter bio marks"));
+
+      let marksheet = (maths, physics, chemistry, english, bio) => {
+        console.log("Marks in Maths", maths);
+        console.log("Marks in physics", physics);
+        console.log("Marks in Chemistry", chemistry);
+        console.log("Marks in English", english);
+
+        console.log("Marks in bio", bio);
+        let percentage = (maths + physics + chemistry + english + bio)/500;
+         console.log("% is", percentage*100);
+
+      };
+      console.log(marksheet(maths, physics, chemistry, english, bio)); */
+
+      //02  create a bank 3 attempts password program
+      /* let password = "helloworld"
+      for(let i=1;i<=3;i++){
+        let  pass = prompt("Enter the password").toLowerCase();
+        if(pass === password){
+            alert("you logged in succesfully");
+            break;
+        }
+        else{
+            if(i == 3){
+                alert("better luck next time")
+            }
+            else{
+                alert("try again");
+            }
+           
+        }
+      }  */
+
+      //03 Write a function to double each number in an array.
+      /*let arr = [2,3,4,5,6];
+let double = (arr)=>{
+    for(let i=0; i<arr.length; i++){
+        arr[i] = arr[i]*2;
+    }
+    return arr;
+}   
+console.log(double(arr) ) */
+
+      //04 write a function to square each number in an array.
+      /*let arr = [2,3,4,5,6];
+let square = (arr)=>{
+    for(let i=0; i<arr.length; i++){
+        arr[i] = arr[i]** 2;
+    }
+    return arr;
+}   
+console.log(square(arr) ) */
+
+      //05  write a function to calculate the length of each string in an array of strings.
+      /*    let arr = ['shiv', 'golu', 'monu', 'chotu'];
+   let lengthString = function(arr){
+    lengths = []
+    for(item of arr){
+        lengths.push(item.length);
+    }
+
+    return lengths;
+      
+   }
+ 
+   console.log(lengthString(arr)) */
+
+      //06. Write a function to convert each string in an array to uppercase.
+      /*let arr = ['shiv', 'golu', 'monu', 'chotu'];
+   let uppercase = function(arr){
+  
+    for(let i=0;i<arr.length; i++){
+        arr[i] = arr[i].toUpperCase()
+    }
+
+    return arr;
+      
+   }
+ 
+   console.log(uppercase(arr)) */
+
+      // 07 Write a function to reverse each string in an array
+    /*  let arr = ["shiv", "golu", "monu", "chotu"];
+      let reverse = function (arr) {
+        for (let i = 0; i < arr.length; i++) {
+            let reversed = "";
+          for (let j = arr[i].length - 1; j >= 0; j--) {
+               reversed = reversed + arr[i][j]
+          }
+          arr[i] = reversed;
+        }
+
+        return arr;
+      };
+
+      console.log(reverse(arr));   */
+      //08 . Write a function to capitalize the first letter of each string in an array.
+ /*let arr = ['shiv', 'golu', 'monu', 'chotu'];
+   let capitalize = function(arr){
+  
+    for(let i=0;i<arr.length; i++){
+        
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+    }
+
+    return arr;
+      
+   }
+ 
+   console.log(capitalize(arr)) */
+  //  09. Write a function to calculate the sum of all numbers in an array.
+/*let arr = [10,20,30,40,50];
+   let arrSum = function(arr){
+  
+    let sum =0;
+    for(let i=0;i<arr.length; i++){
+        sum+=arr[i];
+    }
+
+    return sum;
+      
+   }
+ 
+   console.log(arrSum(arr)) */
+
+  // 10. Write a function to find the maximum number in an array.
+/* let arr = [3,120,46,3999,1,90];
+let max = arr[0];
+
+let arrMax = function(arr){
+for(let i=0; i<arr.length; i++){
+  for(let j =i+1; j<arr.length;j++){
+    if(arr[j] > max){
+      max = arr[j];
+    }
+  }
+}
+return max;
+}
+console.log(arrMax(arr)) */
+
+//11 write a function to find the minimum number in an array.
+/* let arr = [3,120,46,3999,1,90,-1];
+let min = arr[0];
+
+let arrMin = function(arr){
+for(let i=0; i<arr.length; i++){
+  for(let j =i+1; j<arr.length;j++){
+    if(arr[j] < min){
+      min = arr[j];
+    }
+  }
+}
+return min;
+}
+console.log(arrMin(arr)) */
+
+// 12. Write a function to calculate the average of all numbers in an array.
+/*let arr = [10,20,30,40,50];
+   let arrAvg = function(arr){
+  
+    let sum =0;
+    for(let i=0;i<arr.length; i++){
+        sum+=arr[i];
+    }
+
+    return sum/arr.length;
+      
+   }
+ 
+   console.log(arrAvg(arr)) */
+
+   
+    </script>
+  </body>
+</html>
