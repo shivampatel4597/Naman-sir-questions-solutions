@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises</title>
+  </head>
+  <body>
+    <script>
+      //1 --------------------
+      /*const promises = new Promise((resolve, reject)=>{
+setTimeout(()=>{
+    const isSuccess = true;
+    if(isSuccess){
+        resolve("Promise resolved")
+    }else{
+        reject(new Error("failed to fetch data"))
+    }
+    
+
+},1000)
+})
+promises.then((data)=>{
+console.log(data)
+}).catch((error)=>{
+console.error("Rejected:", error.message)
+})  */
+
+      // 2-----------------------------------
+      /*
+const promises = new Promise((resolve, reject)=>{
+setTimeout(()=>{
+    const isSuccess = false;
+    if(isSuccess){
+        resolve("Promise resolved")
+    }else{
+        reject(new Error("Promise rejected"))
+    }
+    
+
+},2000)
+})
+promises.then((data)=>{
+console.log(data)
+}).catch((error)=>{
+console.error("Rejected:", error.message)
+}) */
+
+      // 3  -------------------------
+      /*  function divide(nume, deno){
+
+        let promises = new Promise((resolve,reject)=>{
+            if(deno>0){
+                resolve (nume/deno);
+            }
+            else{
+               reject (new Error("cannot divide by zero"))
+            }
+        })
+        return promises
+
+      }
+      divide(6,0).then((data)=>{
+   console.log("division result:",data)
+      }).catch((error)=>{
+        console.error(error)
+      })
+      */
+
+      //   4-------
+      /* function fetchData(url) {
+        const promises = new Promise((resolve, reject) => {
+          fetch(url).then((response) => {
+            if (!response.ok) {
+             reject (new Error("network response error"));
+            } else {
+              resolve(response.json());
+            }
+          });
+        });
+        return promises;
+      }
+      fetchData("https://jsonplaceholder.typicode.com/todos/").then((data)=>{
+        console.log("api data :",data)
+      }).catch((error)=>{
+        console.log("error:", error)
+      })  */
+
+      //   5-----------
+     /* function randomTime(randomSec, url) {
+        console.log(randomSec);
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            fetch(url)
+              .then((response) => {
+                if (!response.ok) {
+                  reject(new Error("network response error:"));
+                } else {
+                  resolve(response.json());
+                }
+              })
+              .catch((error) => {
+                reject(error);
+              });
+        }, randomSec*1000);
+    })
+        // return promises;
+      }
+      let minSeconds = 1,
+        maxSeconds = 5;
+      var randomSeconds = Math.floor(
+        Math.random() * (maxSeconds - minSeconds + 1) + minSeconds
+      );
+
+      randomTime(randomSeconds, "https://jsonplaceholder.typicode.com/todos/")
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });  */
+
+        // 7----------
+      /*  function fetchUserData(id){
+          
+            return new Promise((resolve, reject)=>{
+                fetch(`https://jsonplaceholder.typicode.com/todos/${id}`).then((response)=>{
+               resolve   (response.json())
+                }).catch((error)=>{
+                   reject (new Error(error))
+                })
+            })
+        }
+        fetchUserData(5)
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => {
+          console.log(error);
+        }); 
+*/
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+1. Create a promise that resolves after 1 second. Log "Promise resolved" when it resolves.
+2. Create a promise that rejects after 2 seconds. Log "Promise rejected" when it rejects.
+3. Write a function divide that takes two parameters, numerator and denominator, and returns a promise that resolves with the result of the division if the denominator is not zero, otherwise rejects with an error message "Cannot divide by zero".
+4. Write a function fetchData that takes a URL parameter and returns a promise that fetches data from that URL using fetch API.
+4. Create a promise that resolves after a random time between 1 to 5 seconds. Log "Promise resolved" when it resolves.
+6. Write a function delay that takes a time parameter and returns a promise that resolves after that time.
+7. Write a function getUserData that takes a user ID parameter and returns a promise that simulates fetching user data from a database based on that ID.
+8. Create a promise chain that performs the following tasks:
+Fetch data from a URL.
+Parse the JSON data.
+Filter the data to get only even numbers.
+Log the result.
+10. Write a function capitalizeWords that takes an array of words and returns a promise that capitalizes each word in the array.
+11. Write a function calculateSum that takes an array of numbers and returns a promise that calculates the sum of all numbers in the array.
